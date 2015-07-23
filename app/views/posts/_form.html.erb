@@ -1,7 +1,7 @@
 <!-- Fill in code here to create a form that can be used for either creating or editing a post (see Rails Guides Getting Started section 5.12 if you need help) -->
 
 <!-- BONUS! Add some error handling -->
-<%= form_for :post, url: posts_path do |f| %>
+<%= form_for @post do |f| %>
  
   <% if @post.errors.any? %>
     <div id="error_explanation">

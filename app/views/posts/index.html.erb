@@ -12,6 +12,9 @@
       <td><%= post.bru_name %></td>
       <td><%= link_to post.title, post_path(post) %></td>
       <td><%= post.body %></td>
+      <td><%= link_to 'Delete', post_path(post),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
 </table><br>

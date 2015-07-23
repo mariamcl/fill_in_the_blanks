@@ -1,4 +1,4 @@
 class Post < ActiveRecord::Base
-	# create some validations here that ensure both our attributes
-	# are present when a user creates or edits a post
+	validates :title, :bru_name, presence: true
+	validates :body, presence: true, length: { minimum: 5 }
 end
